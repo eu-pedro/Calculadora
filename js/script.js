@@ -4,23 +4,20 @@ let h3 = document.querySelector("#calc > h3")
 let deletar = [];
 
 
-function Calcular(num){
-  var valor = document.querySelector("#current-operation")
-  valor.innerHTML += num
+function Inserir(num){
+  var valor = document.querySelector("#current-operation").innerHTML
 
-  if(num === "AC"){
-    Limpar();
-  } 
-  if(num === "DEL") {
-    Deletar();
-  }
+  document.querySelector("#current-operation").innerHTML = valor + num 
+  
 }
 
 function Limpar(){
-  currentOperationText.textContent = ""
+  currentOperationText.textContent = "";
+  deletar.splice(0, deletar.length);
+  
 }
 
 function Deletar(){
-  currentOperationText.textContent = ""
-  console.log(currentOperationText.length)
+  var renderizar = document.querySelector("#current-operation").innerHTML
+  document.querySelector("#current-operation").innerHTML = renderizar.substring(0, renderizar.length -1) 
 }
