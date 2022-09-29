@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div id="calc">
+    <h3>Calculadora</h3>
+    <div id="operations">
+
+      <div id="current-operation"></div>
+
+    </div>
+
+    <div id="buttons-container">
+      
+      <button onClick="Calcular('AC')" id="ac" >AC</button>
+      <button onClick="Calcular('DEL')" id="del">DEL</button>
+      <button onClick="Calcular('/')">/</button>
+      <button onClick="Calcular('7')" class="number">7</button>
+      <button onClick="Calcular('8')" class="number">8</button>
+      <button onClick="Calcular('9')" class="number">9</button>
+      <button onClick="Calcular('*')" >*</button>
+      <button onClick="Calcular('4')" class="number">4</button>
+      <button onClick="Calcular('5')" class="number">5</button>
+      <button onClick="Calcular('6')" class="number">6</button>
+      <button onClick="Calcular('-')" >-</button>
+      <button onClick="Calcular('1')" class="number">1</button>
+      <button onClick="Calcular('2')" class="number">2</button>
+      <button onClick="Calcular('3')" class="number">3</button>
+      <button onClick="Calcular('+')" >+</button>
+      <button onClick="Calcular('0')" class="number">0</button>
+      <button onClick="Calcular('.')" class="number">.</button>
+      <button onClick="Calcular('=')" id="equal-btn" >=</button>
+
+
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
