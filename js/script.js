@@ -21,3 +21,10 @@ function Deletar(){
   var renderizar = document.querySelector("#current-operation").innerHTML
   document.querySelector("#current-operation").innerHTML = renderizar.substring(0, renderizar.length -1) 
 }
+
+function Calcular(){
+  var resultado = document.querySelector("#current-operation").innerHTML
+  if(resultado){
+    document.querySelector('#current-operation').innerHTML = eval(resultado);
+  }
+}
